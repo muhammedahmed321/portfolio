@@ -98,6 +98,63 @@ header {
         display: flex;
       }
     }
+        
+/* ===== Mobile Menu Icon ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 200px;
+  margin-right: 150px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 300px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }
+
+  .logo img{
+    width: 300px;
+    height: 100px;
+
+  }
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #161616;
+    width: 100%;
+    display: none;
+    padding: 10px 20px;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .btn-download {
+  margin-bottom: 500px;
+  margin-left: 100px;
+
+  }
+}
+
 
 
 :root {
