@@ -1,5 +1,3 @@
-/* css/style.css */
-
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +14,8 @@ header {
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: #161616; /* Slightly lighter than body for contrast */
-      border-bottom: 2px solid #8000ff; /* Purple accent underline */
+      background-color: #161616; 
+      border-bottom: 2px solid #8000ff; 
     }
 
     .logo {
@@ -31,7 +29,7 @@ header {
 
     .logo span {
       color: #a259ff; /* Purple accent color */
-    }
+    } 
 
     nav ul {
       list-style: none;
@@ -65,7 +63,7 @@ header {
 
     .btn-download:hover {
       background-color: #7d29cc;
-    }
+    } 
 
     @media (max-width: 768px) {
       nav ul {
@@ -84,6 +82,64 @@ header {
         display: flex;
       }
     }
+
+
+/* ===== Mobile Menu Icon ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+  margin-top: 200px;
+  margin-right: 150px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: 300px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }
+
+  .logo img{
+    width: 300px;
+    height: 100px;
+
+  }
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #161616;
+    width: 100%;
+    display: none;
+    padding: 10px 20px;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .btn-download {
+  margin-bottom: 500px;
+  margin-left: 100px;
+
+  }
+}
+
 
 .hero {
   height: 90vh;
